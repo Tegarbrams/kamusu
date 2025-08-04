@@ -1,0 +1,2 @@
+# kamusu
+Tugas VSGA
