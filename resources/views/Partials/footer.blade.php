@@ -1,5 +1,5 @@
 <section class="py-5 bg-light" style="margin-left: 240px; width: calc(100% - 240px); min-height: 100vh; padding-top: 76px;">
-    <div class="container">
+    <div class="container" id="kontak">
       <h2 class="text-center mb-4">Hubungi Kami</h2>
       <div class="row">
         <div class="col-md-6">

@@ -22,10 +22,10 @@
                     <a class="nav-link" href="#tentang">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/program">Program</a>
+                    <a class="nav-link" href="#program">Program</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/kontak">Kontak</a>
+                    <a class="nav-link" href="#kontak">Kontak</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
