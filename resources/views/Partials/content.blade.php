@@ -10,7 +10,7 @@
 
   <!-- Konten hero -->
   <div class="container position-relative text-center" style="z-index: 2;">
-    <h1 class="display-4 fw-bold">KARANG TARUNA [NAMA DESA/KELURAHAN]</h1>
+    <h1 class="display-4 fw-bold">KARANG TARUNA SUTOPADAN</h1>
     <p class="lead">Membangun Generasi Muda Berkarakter, Berkreasi untuk Negeri</p>
     <p>Organisasi kepemudaan tingkat desa yang bergerak dalam pemberdayaan masyarakat dan pengembangan potensi generasi muda</p>
     <a href="#tentang" class="btn btn-primary btn-lg me-2">Bergabung Bersama Kami</a>

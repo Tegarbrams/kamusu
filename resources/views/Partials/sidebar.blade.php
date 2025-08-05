@@ -4,9 +4,6 @@
         <div class="p-3" style="margin-top: 76px;">
             <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                    <a class="nav-link text-black" href="#">Beranda</a>
-                </li>
-                <li class="nav-item mb-2">
                     <a class="nav-link text-black" href="#">Struktur Organisasi</a>
                 </li>
                 <li class="nav-item mb-2">
@@ -15,15 +12,6 @@
                 <li class="nav-item mb-2">
                     <a class="nav-link text-black" href="#">Agenda Kegiatan</a>
                 </li>
-                {{-- <li class="nav-item mb-2">
-                    <a class="nav-link text-black" href="#">🎵 Music</a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="nav-link text-black" href="#">🎬 Film</a>
-                </li>
-                <li class="nav-item mb-2">
-                    <a class="nav-link text-black" href="#">🔖 Bookmark</a>
-                </li> --}}
             </ul>
         </div>
     </aside>
