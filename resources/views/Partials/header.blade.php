@@ -27,6 +27,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#kontak">Kontak</a>
                 </li>
+                 <!-- Dropdown Lainnya -->
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="lainnyaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Artikel
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="lainnyaDropdown">
+                        <li><a class="dropdown-item" href="/struktur">Struktur Organisasi</a></li>
+                        <li><a class="dropdown-item" href="/dokumentasi">Dokumentasi</a></li>
+                        <li><a class="dropdown-item" href="#berita">Berita</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
                 </li>

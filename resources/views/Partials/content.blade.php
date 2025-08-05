@@ -14,7 +14,6 @@
     <p class="lead">Membangun Generasi Muda Berkarakter, Berkreasi untuk Negeri</p>
     <p>Organisasi kepemudaan tingkat desa yang bergerak dalam pemberdayaan masyarakat dan pengembangan potensi generasi muda</p>
     <a href="#tentang" class="btn btn-primary btn-lg me-2">Bergabung Bersama Kami</a>
-    <a href="#program" class="btn btn-outline-light btn-lg">Pelajari Lebih Lanjut</a>
   </div>
 </section>
 
@@ -204,38 +203,39 @@
 </section>
 
 <!-- BERITA SECTION -->
-<section class="py-5 bg-light">
+<section class="py-5 bg-light" id="berita">
   <div class="container">
-    <h2 class="text-center mb-4">Berita Terkini</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="/images/berita1.jpg" class="card-img-top" alt="Berita">
-          <div class="card-body">
-            <h5 class="card-title">Judul Berita</h5>
-            <p class="card-text">Ringkasan berita atau artikel terbaru.</p>
-            <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
-          </div>
+    <h2>Berita Terbaru</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    @foreach ($beritas as $berita)
+        <div style="border: 1px solid #ccc; padding: 10px; width: 250px;">
+            <img src="{{ asset('storage/' . $berita->foto) }}" alt="Foto" style="width: 100%; height: auto;">
+            <h4>{{ $berita->judul }}</h4>
+            <a href="#">Baca Selengkapnya</a>
         </div>
-      </div>
-    </div>
+    @endforeach
+</div>
   </div>
 </section>
 
 <!-- TESTIMONI SECTION -->
 <section class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Suara Masyarakat</h2>
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <blockquote class="blockquote text-center">
-            <p class="mb-4">"Karang Taruna sangat membantu kegiatan sosial di desa kami."</p>
-            <footer class="blockquote-footer">Warga Desa A</footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
+  <div class="container py-4">
+    <h4 class="mb-3">Komentar Warga</h4>
+
+    {{-- List Komentar --}}
+    <ul class="list-group">
+        @forelse ($komentar as $item)
+            <li class="list-group-item">
+                <strong>{{ $item->user->name }}</strong><br>
+                {{ $item->isi }}
+                <div class="text-muted small">{{ $item->created_at->diffForHumans() }}</div>
+            </li>
+        @empty
+            <li class="list-group-item">Belum ada komentar.</li>
+        @endforelse
+    </ul>
+</div>
   </div>
 </section>
 
